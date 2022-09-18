@@ -28,6 +28,10 @@ $panelText: #b9beb7;
 	background: linear-gradient(90deg, #{$panelStartColor}, #{$panelEndColor});
 	padding-left: 5px;
 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 	&__hr {
 		position: absolute;
 		top: 13px;
