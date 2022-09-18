@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import AppRouting from "./router/appRouting";
 
 const App: FC = () => {

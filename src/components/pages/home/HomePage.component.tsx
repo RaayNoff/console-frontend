@@ -1,7 +1,8 @@
-import React, { FC } from "react";
+import { FC } from "react";
+import MainLayoutComponent from "../../layouts/main";
 
 const HomePageComponent: FC = () => {
-  return <>home page component works!</>;
+  return <MainLayoutComponent children={"Test string"} />;
 };
 
 export default HomePageComponent;
