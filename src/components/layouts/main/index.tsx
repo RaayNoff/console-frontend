@@ -1,4 +1,5 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
+import { useTypedSelector } from "../../../hooks/useTypedSelector";
 import s from "./style.module.scss";
 
 interface IMainLayoutProps {
@@ -6,14 +7,14 @@ interface IMainLayoutProps {
 }
 
 const MainLayoutComponent: FC<IMainLayoutProps> = ({ children }) => {
-  const [text, setText] = useState("V://System32/http/services/raaynoff");
+  const { base, path } = useTypedSelector((state) => state.panelLine);
 
   return (
     <main className={s.mainlayout}>
       {children}
 
       <div className={s.panel}>
-        {text}
+        {base + path}
         <hr className={s.panel__hr} />
       </div>
 
