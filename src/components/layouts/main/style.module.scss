@@ -46,6 +46,7 @@ $panelText: #b9beb7;
 	left: $leftRightBorderWidth;
 	display: block;
 	position: absolute;
+	pointer-events: none;
 	z-index: 2;
 	width: calc(100% - (#{$leftRightBorderWidth} * 2));
 	height: calc(100% - (#{$topBorderWidth + $leftRightBorderWidth}));
