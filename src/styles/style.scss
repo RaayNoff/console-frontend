@@ -2,6 +2,7 @@
 @import "_fonts.scss";
 
 * {
+	font-family: "VT323", monospace;
 	box-sizing: border-box;
 }
 
@@ -10,8 +11,8 @@ body {
 	font-family: "VT323", monospace;
 	font-size: 20px;
 	line-height: 20px;
-	color: green;
-	text-shadow: 0 0 20px #d1fb84, 0 0 30px #d1fb84;
+	color: #3ed08e;
+	// text-shadow: 0 0 20px #d1fb84, 0 0 30px #d1fb84;
 	overflow: hidden;
 }
 
