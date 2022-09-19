@@ -3,7 +3,7 @@ import { useTypedSelector } from "../../../hooks/useTypedSelector";
 import s from "./style.module.scss";
 
 interface IMainLayoutProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const MainLayoutComponent: FC<IMainLayoutProps> = ({ children }) => {
