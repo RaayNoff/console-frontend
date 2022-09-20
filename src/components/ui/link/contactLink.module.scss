@@ -1,0 +1,8 @@
+.contactLink {
+	transition: all 150ms ease-in-out;
+	font-size: 2rem;
+
+	&:hover {
+		text-shadow: 0 0 30px #d1fb84, 0 0 30px #d1fb84;
+	}
+}
