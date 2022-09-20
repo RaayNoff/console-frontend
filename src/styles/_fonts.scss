@@ -1,1 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+@font-face {
+	font-family: Blox2;
+	src: url("../assets/fonts/Blox2.ttf") format("truetype"), url("../assets/fonts/Blox2.woff") format("woff"),
+		url("../assets/fonts/Blox2.woff2") format("woff2");
+	font-display: swap;
+	font-weight: 400;
+}
+@font-face {
+	font-family: BACKTO1982;
+	src: url("../assets/fonts/BACKTO1982.TTF") format("truetype"), url("../assets/fonts/BACKTO1982.woff") format("woff"),
+		url("../assets/fonts/BACKTO1982.woff2") format("woff2");
+	font-display: swap;
+	font-weight: 400;
+}
