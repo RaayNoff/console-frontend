@@ -1,0 +1,25 @@
+@import "../../../styles/_variables.scss";
+
+.window {
+	position: absolute;
+	// visibility: hidden;
+	top: 0;
+	left: 0;
+	width: 450px;
+	height: 500px;
+	border: 3px solid $windowBorderColor;
+	z-index: 4;
+	background-color: $windowsBackgroundColor;
+
+	// .window__panel
+	&__panel {
+	}
+}
+.panel {
+	color: $panelTextColor;
+	background: linear-gradient(90deg, #{$panelGradientStart}, #{$panelGradientEnd});
+
+	// .panel__hr
+	&__hr {
+	}
+}
