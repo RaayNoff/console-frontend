@@ -7,24 +7,49 @@
 
 	// .home__title
 	&__title {
+		font-family: BACKTO1982;
 		flex: 0 0 auto;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		font-size: 2rem;
+	}
+
+	// .home__subtitle
+	&__subtitle {
+		font-family: Blox2;
+		font-weight: 400;
+		font-size: 2.5rem;
 	}
 
 	// .home__content
 	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// .home__welcome
+	&__welcome {
+		margin-bottom: 1rem;
+	}
+
+	// .home__container
+	&__container {
+		margin-top: 3rem;
 		flex: 1 0 auto;
-	}
-
-	// .home__about
-	&__about {
-	}
-
-	// .home__aside
-	&__aside {
+		width: 100%;
 	}
 
 	// .home__contact
 	&__contact {
 		flex: 0 0 auto;
+		padding-inline-start: 0;
 	}
+}
+
+.animatedLetter {
+	position: absolute;
+	top: 6rem;
+	left: 4rem;
 }
