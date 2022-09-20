@@ -1,6 +1,9 @@
 .contactLink {
 	transition: all 150ms ease-in-out;
-	font-size: 2rem;
+	font-family: BACKTO1982;
+	font-size: 1.1rem;
+
+	line-height: 2rem /1.5rem * 100%;
 
 	&:hover {
 		text-shadow: 0 0 30px #d1fb84, 0 0 30px #d1fb84;

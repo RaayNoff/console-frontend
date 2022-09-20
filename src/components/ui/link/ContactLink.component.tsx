@@ -15,6 +15,7 @@ const ContactLinkComponent: FC<IContactLinkProps> = ({
 }) => {
   return (
     <a
+      data-language="en"
       className={s.contactLink}
       href={linkRef}
       rel="noreferrer"
