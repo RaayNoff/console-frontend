@@ -1,6 +1,6 @@
 export enum RoutePath {
-  HOME = "home",
+  HOME = "",
   SKILLS = "skills",
   PORTFOLIO = "portfolio",
-  NOROUTE = "",
+  NOROUTE = "*",
 }
