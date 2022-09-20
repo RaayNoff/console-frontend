@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import { useTypedSelector } from "../../../hooks/useTypedSelector";
-import s from "./style.module.scss";
+import s from "./mainLayout.module.scss";
 
 interface IMainLayoutProps {
   children?: React.ReactNode;
 }
 
-const MainLayoutComponent: FC<IMainLayoutProps> = ({ children }) => {
+const MainLayout: FC<IMainLayoutProps> = ({ children }) => {
   const { base, path } = useTypedSelector((state) => state.panelLine);
 
   return (
@@ -26,4 +26,4 @@ const MainLayoutComponent: FC<IMainLayoutProps> = ({ children }) => {
   );
 };
 
-export default MainLayoutComponent;
+export default MainLayout;
