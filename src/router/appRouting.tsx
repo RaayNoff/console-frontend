@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Routes, Route } from "react-router-dom";
-import RoutesEntity from "./entity";
+import RoutesEntity from "./RoutesEntity";
 
 const AppRouting: FC = () => {
   return (
