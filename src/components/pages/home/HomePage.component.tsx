@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { useDynamicPanelText } from "../../../hooks/useDynamicPanelText";
 import ContactsComponent from "../../buisness/contacts/Contacts.component";
 import NavigationComponent from "../../buisness/navigation/Navigation.component";
 import WelcomeComponent from "../../buisness/welcome/Welcome.component";
@@ -6,6 +7,8 @@ import MainLayout from "../../layouts/main/mainLayout";
 import s from "./homepage.module.scss";
 
 const HomePageComponent: FC = () => {
+  useDynamicPanelText();
+
   return (
     <MainLayout>
       <main className={s.home}>
