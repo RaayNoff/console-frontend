@@ -1,0 +1,30 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	// .home__title
+	&__title {
+		flex: 0 0 auto;
+	}
+
+	// .home__content
+	&__content {
+		flex: 1 0 auto;
+	}
+
+	// .home__about
+	&__about {
+	}
+
+	// .home__aside
+	&__aside {
+	}
+
+	// .home__contact
+	&__contact {
+		flex: 0 0 auto;
+	}
+}
