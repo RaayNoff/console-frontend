@@ -1,9 +1,20 @@
 @import "~normalize.css";
 @import "_fonts.scss";
 
+$defaultTextColor: #3ed08e;
+
 * {
 	font-family: "VT323", monospace;
 	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: $defaultTextColor;
+}
+
+li {
+	list-style-type: none;
 }
 
 html,
@@ -11,9 +22,9 @@ body {
 	font-family: "VT323", monospace;
 	font-size: 20px;
 	line-height: 20px;
-	color: #3ed08e;
-	// text-shadow: 0 0 20px #d1fb84, 0 0 30px #d1fb84;
+	color: $defaultTextColor;
 	overflow: hidden;
+	user-select: none;
 }
 
 #root {
