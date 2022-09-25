@@ -20,7 +20,6 @@ const HomePageComponent: FC = () => {
             <div className={s.home__welcome}>
               <WelcomeComponent />
             </div>
-            <NavigationComponent />
           </section>
         </section>
         <footer className={s.home__contact}>

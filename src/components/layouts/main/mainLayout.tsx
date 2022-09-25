@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { useTypedSelector } from "../../../hooks/useTypedSelector";
+import NavigationComponent from "../../buisness/navigation/Navigation.component";
 import s from "./mainLayout.module.scss";
 
 interface IMainLayoutProps {
@@ -11,6 +12,7 @@ const MainLayout: FC<IMainLayoutProps> = ({ children }) => {
 
   return (
     <main className={s.mainlayout}>
+      <NavigationComponent />
       {children}
 
       <div className={s.panel}>
