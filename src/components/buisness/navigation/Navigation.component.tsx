@@ -1,21 +1,39 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { RoutePath } from "../../../data/enum/routePath";
 import s from "./navigation.module.scss";
 
 const NavigationComponent: FC = () => {
+  const activeStyle = {
+    color: "#d1fb84",
+  };
+
   return (
     <nav className={s.navigation}>
-      <Link
-        to={RoutePath.PORTFOLIO}
+      <NavLink
+        to={"../" + RoutePath.HOME}
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        title="Home"
+        className={s.navigation__item}
+      >
+        HOME
+      </NavLink>
+      <NavLink
+        to={"../" + RoutePath.PORTFOLIO}
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
         title="Portfolio"
         className={s.navigation__item}
       >
         PORTFOLIO
-      </Link>
-      <Link to={RoutePath.SKILLS} title="Skills" className={s.navigation__item}>
+      </NavLink>
+      <NavLink
+        to={"../" + RoutePath.SKILLS}
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        title="Skills"
+        className={s.navigation__item}
+      >
         SKILLS
-      </Link>
+      </NavLink>
     </nav>
   );
 };

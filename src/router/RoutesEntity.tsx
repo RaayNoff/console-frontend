@@ -14,7 +14,7 @@ export default class RoutesEntity {
     },
     {
       id: 1,
-      path: "",
+      path: RoutePath.HOME,
       component: <HomePageComponent />,
     },
     {
