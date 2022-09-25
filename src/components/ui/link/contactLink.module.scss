@@ -1,11 +1,21 @@
+@import "../../../styles/variables";
 .contactLink {
 	transition: all 150ms ease-in-out;
-	font-family: BACKTO1982;
-	font-size: 1.1rem;
+	max-width: 35px;
+	max-height: 35px;
+	font-family: inherit;
+	font-size: 2rem;
 
 	line-height: 2rem /1.5rem * 100%;
 
-	&:hover {
-		text-shadow: 0 0 30px #d1fb84, 0 0 30px #d1fb84;
+	svg {
+		width: 35px;
+		height: 35px;
+		fill: $defaultTextColor;
+		transition: all 150ms ease-in-out;
+		&:hover {
+			transform: scale(1.1);
+			text-decoration: underline;
+		}
 	}
 }

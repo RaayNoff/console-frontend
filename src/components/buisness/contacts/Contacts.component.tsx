@@ -8,24 +8,16 @@ const ContactsComponent = () => {
     <footer className={s.home__contact}>
       <ul className={s.contacts}>
         <li className={s.contacts__item}>
-          <ContactLink linkRef={ContactLinks.TG} title="TELEGRAM">
-            TELEGRAM
-          </ContactLink>
+          <ContactLink linkRef={ContactLinks.TG} title="TELEGRAM" />
         </li>
         <li className={s.contacts__item}>
-          <ContactLink linkRef={ContactLinks.DISCORD} title="DISCORD">
-            DISCORD
-          </ContactLink>
+          <ContactLink linkRef={ContactLinks.DISCORD} title="DISCORD" />
         </li>
         <li className={s.contacts__item}>
-          <ContactLink linkRef={ContactLinks.VK} title="VK">
-            VK
-          </ContactLink>
+          <ContactLink linkRef={ContactLinks.VK} title="VK" />
         </li>
         <li className={s.contacts__item}>
-          <ContactLink linkRef={ContactLinks.GITHUB} title="GITHUB">
-            GITHUB
-          </ContactLink>
+          <ContactLink linkRef={ContactLinks.GITHUB} title="GITHUB" />
         </li>
       </ul>
     </footer>

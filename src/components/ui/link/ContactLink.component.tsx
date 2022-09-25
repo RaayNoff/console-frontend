@@ -1,18 +1,14 @@
 import React, { FC } from "react";
 import { ContactLinks } from "../../../data/enum/contactLinks";
 import s from "./contactLink.module.scss";
+import ContactLinkSVGSelector from "./ContactLinkSVGSelector";
 
 interface IContactLinkProps {
-  children?: React.ReactNode;
   linkRef: ContactLinks;
   title: string;
 }
 
-const ContactLinkComponent: FC<IContactLinkProps> = ({
-  children,
-  linkRef,
-  title,
-}) => {
+const ContactLinkComponent: FC<IContactLinkProps> = ({ linkRef, title }) => {
   return (
     <a
       data-language="en"
@@ -22,7 +18,7 @@ const ContactLinkComponent: FC<IContactLinkProps> = ({
       target="_blank"
       title={title}
     >
-      {children}
+      {ContactLinkSVGSelector(linkRef)}
     </a>
   );
 };
