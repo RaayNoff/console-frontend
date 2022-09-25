@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
+import { skillsService } from "../../services/api/skillsService";
 import { panelLineSlice } from "./panelLine.slice";
 import { userSelection } from "./userSelection";
 
 export const rootReducer = combineReducers({
-	userSelection: userSelection.reducer,
+  userSelection: userSelection.reducer,
   panelLine: panelLineSlice.reducer,
+  [skillsService.reducerPath]: skillsService.reducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;
