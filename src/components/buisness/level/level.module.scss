@@ -1,0 +1,10 @@
+@import "../../../styles/_variables.scss";
+
+.level {
+	width: 125px;
+	svg {
+		max-width: 25px;
+		max-height: 25px;
+		fill: $defaultTextColor;
+	}
+}
