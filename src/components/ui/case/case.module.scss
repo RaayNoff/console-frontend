@@ -1,0 +1,46 @@
+@import "../../../styles/_variables.scss";
+.case {
+	background: rgba(#121208, 0.6);
+	border-radius: 10px;
+	max-width: 500px;
+	width: 500px;
+
+	padding: 5px 10px;
+	text-align: center;
+	margin-bottom: 10px;
+
+	// .case__header
+	&__header {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	// .case__link
+	&__link {
+		align-self: flex-end;
+		font-size: 0.9rem;
+		line-height: 1.2rem / 0.9rem * 100%;
+		transition: all 150ms ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			text-shadow: 0 0 5px #d1fb84, 0 0 30px #d1fb84;
+		}
+	}
+
+	// .case__title
+	&__title {
+		font-size: 1rem;
+		line-height: 1.2rem / 1rem * 100%;
+	}
+
+	// .case__description
+	&__description {
+		margin: 0;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+}
