@@ -13,9 +13,7 @@ const HomePageComponent: FC = () => {
     <MainLayout>
       <section className={s.home}>
         <div className="container">
-          <h1 className={s.home__title} data-language="en">
-            Dmitry Tarasenko
-          </h1>
+          <h1 className={s.home__title}>Dmitry Tarasenko</h1>
           <section className={s.home__container}>
             <section className={s.home__content}>
               <div className={s.home__welcome}>
