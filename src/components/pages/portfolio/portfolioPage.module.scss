@@ -1,0 +1,18 @@
+.portfolio {
+	margin-top: 2rem;
+	// .portfolio__title
+	&__title {
+		font-size: 1.6rem;
+		line-height: 1.8rem / 1.6rem * 100%;
+		margin-bottom: 60px;
+	}
+
+	// .portfolio__cases
+	&__cases {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 800px;
+	}
+}
