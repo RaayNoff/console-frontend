@@ -14,9 +14,6 @@ const ContactsComponent = () => {
           <ContactLink linkRef={ContactLinks.DISCORD} title="DISCORD" />
         </li>
         <li className={s.contacts__item}>
-          <ContactLink linkRef={ContactLinks.VK} title="VK" />
-        </li>
-        <li className={s.contacts__item}>
           <ContactLink linkRef={ContactLinks.GITHUB} title="GITHUB" />
         </li>
       </ul>
