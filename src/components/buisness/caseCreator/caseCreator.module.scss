@@ -1,0 +1,51 @@
+@import "../../../styles/_variables.scss";
+
+.creator {
+	background: rgba(#121208, 0.6);
+	border-radius: 10px;
+	max-width: 500px;
+	width: 500px;
+	padding: 5px 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	// .creator__input
+	&__input {
+		@extend %inputTemplate;
+
+		&::placeholder {
+			@extend %placeholderTemplate;
+		}
+		&:focus {
+			@extend %focusTemplate;
+		}
+	}
+
+	// .creator__textarea
+	&__textarea {
+		@extend %inputTemplate;
+		resize: none;
+
+		&::placeholder {
+			@extend %placeholderTemplate;
+		}
+		&:focus {
+			@extend %focusTemplate;
+		}
+	}
+
+	// .creator__button
+	&__button {
+		@extend %submitButton;
+
+		&:hover {
+			@extend %submitButton_hover;
+		}
+		&:disabled {
+			@extend %submitButton_disabled;
+		}
+	}
+}
