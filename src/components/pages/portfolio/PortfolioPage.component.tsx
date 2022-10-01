@@ -1,12 +1,15 @@
 import { FC } from "react";
 import { useDynamicPanelText } from "../../../hooks/useDynamicPanelText";
 import { portfolioService } from "../../../services/api/portfolioService";
+import CaseCreatorComponent from "../../buisness/caseCreator/CaseCreator.component";
 import MainLayout from "../../layouts/main/mainLayout";
 import CaseComponent from "../../ui/case/Case.component";
 import s from "./portfolioPage.module.scss";
 
 const PortfolioPageComponent: FC = () => {
-  const { data: cases } = portfolioService.useFetchAllCasesQuery(0);
+  const { data: cases } = portfolioService.useFetchAllCasesQuery(0, {
+    pollingInterval: 30000,
+  });
 
   useDynamicPanelText();
   return (
@@ -18,11 +21,13 @@ const PortfolioPageComponent: FC = () => {
             {cases?.map((c) => (
               <CaseComponent
                 key={c.id}
+                id={c.id}
                 name={c.name}
                 description={c.description}
                 url={c.url}
               />
             ))}
+            <CaseCreatorComponent />
           </section>
         </div>
       </section>
