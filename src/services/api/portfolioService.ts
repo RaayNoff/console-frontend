@@ -43,6 +43,7 @@ export const portfolioService = createApi({
           name,
           description,
           url,
+          key: localStorage.getItem("key"),
         },
       }),
       invalidatesTags: ["Portfolio"],
@@ -56,6 +57,7 @@ export const portfolioService = createApi({
           name,
           description,
           url,
+          key: localStorage.getItem("key"),
         },
       }),
       invalidatesTags: ["Portfolio"],
@@ -64,6 +66,9 @@ export const portfolioService = createApi({
       query: ({ id }) => ({
         url: backendEndpoints.portfolio + `/${id}`,
         method: "DELETE",
+        body: {
+          key: localStorage.getItem("key"),
+        },
       }),
       invalidatesTags: ["Portfolio"],
     }),
