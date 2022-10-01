@@ -1,4 +1,16 @@
 @import "../../../styles/_variables.scss";
+
+%hvtemplate {
+	cursor: pointer;
+	text-shadow: 0 0 5px #d1fb84, 0 0 30px #d1fb84;
+}
+%controlsTemplate {
+	transition: all 150ms ease-in-out;
+	font-size: 0.9rem;
+	line-height: 1.2rem / 0.9rem * 100%;
+	color: $defaultTextColor;
+}
+
 .case {
 	background: rgba(#121208, 0.6);
 	border-radius: 10px;
@@ -18,16 +30,31 @@
 		justify-content: space-between;
 	}
 
+	&__control {
+		margin: 0;
+		padding: 0;
+		background: transparent;
+		border: 0;
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0px;
+		}
+
+		@extend %controlsTemplate;
+
+		&:hover {
+			@extend %hvtemplate;
+		}
+	}
+
 	// .case__link
 	&__link {
 		align-self: flex-end;
-		font-size: 0.9rem;
-		line-height: 1.2rem / 0.9rem * 100%;
-		transition: all 150ms ease-in-out;
+		@extend %controlsTemplate;
+		margin-right: 10px;
 
 		&:hover {
-			cursor: pointer;
-			text-shadow: 0 0 5px #d1fb84, 0 0 30px #d1fb84;
+			@extend %hvtemplate;
 		}
 	}
 
@@ -42,5 +69,50 @@
 		margin: 0;
 		margin-bottom: 10px;
 		text-align: left;
+	}
+
+	// .case__input
+	&__input {
+		@extend %inputTemplate;
+
+		&::placeholder {
+			@extend %placeholderTemplate;
+		}
+		&:focus {
+			@extend %focusTemplate;
+		}
+	}
+
+	// .case__textarea
+	&__textarea {
+		@extend %inputTemplate;
+		resize: none;
+
+		&::placeholder {
+			@extend %placeholderTemplate;
+		}
+		&:focus {
+			@extend %focusTemplate;
+		}
+	}
+
+	// .case__submit
+	&__submit {
+		@extend %submitButton;
+		margin-right: 10px;
+		&:hover {
+			@extend %submitButton_hover;
+		}
+		&:disabled {
+			@extend %submitButton_disabled;
+		}
+	}
+
+	&__cancel {
+		@extend %submitButton;
+
+		&:hover {
+			@extend %submitButton_hover;
+		}
 	}
 }
