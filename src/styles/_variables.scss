@@ -7,3 +7,39 @@ $panelGradientStart: #7d7f7c;
 $panelGradientEnd: $windowBorderColor;
 $panelTextColor: #b9beb7;
 $defaultTextColor: #3ed08e;
+
+%inputTemplate {
+	color: $defaultTextColor;
+	width: 100%;
+	background-color: transparent;
+	border: 0;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+%placeholderTemplate {
+	color: $defaultTextColor;
+}
+%focusTemplate {
+	outline: none;
+	border: 1px solid $defaultTextColor;
+}
+
+%submitButton {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	transition: all 150ms ease-in-out;
+	font-size: 1rem;
+	line-height: 1.2rem / 1rem * 100%;
+	color: $defaultTextColor;
+}
+%submitButton_hover {
+	cursor: pointer;
+	text-shadow: 0 0 5px #d1fb84, 0 0 30px #d1fb84;
+}
+%submitButton_disabled {
+	color: rgb(140, 160, 67);
+	cursor: not-allowed;
+	text-shadow: none;
+}
