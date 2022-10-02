@@ -1,5 +1,5 @@
 class BackendEndpoints {
-  baseUrl = "http://localhost:8080";
+  baseUrl = "https://fast-anchorage-17025.herokuapp.com";
   skills = "/api/skills";
   portfolio = "/api/portfolio";
   access = "/api/access";
