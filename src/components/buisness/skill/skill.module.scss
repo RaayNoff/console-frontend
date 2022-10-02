@@ -1,0 +1,85 @@
+@import "../../../styles/_variables.scss";
+
+.skill {
+	background: rgba(#121208, 0.6);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	max-width: 150px;
+	padding: 5px 10px;
+	padding-bottom: 0;
+
+	// .skill_img
+	&_img {
+		padding-top: 10px;
+		max-width: 50px;
+		max-height: 50px;
+		width: 60px;
+		height: 60px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		padding-left: 5px;
+	}
+
+	&__input {
+		@extend %inputTemplate;
+		border: 1px solid $defaultTextColor;
+
+		&::placeholder {
+			@extend %placeholderTemplate;
+		}
+		&:focus {
+			@extend %focusTemplate;
+		}
+		margin-bottom: 10px;
+	}
+
+	&__file {
+		margin-top: 6px;
+		padding: 10px 5px;
+		border: 2px dashed $defaultTextColor;
+		margin-bottom: 20px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	// .skill_name
+	&__name {
+		margin: 0;
+		font-size: 1.1rem;
+		line-height: 1.2rem / 1.1rem * 100%;
+		margin-bottom: 10px;
+	}
+
+	&__rating {
+		margin-bottom: 3px;
+	}
+
+	// .skill__data
+	&__data {
+		width: 400px;
+		align-self: flex-start;
+	}
+}
+.controls {
+	&__button {
+		@extend %submitButton;
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0px;
+		}
+		&:hover {
+			@extend %submitButton_hover;
+		}
+		&:disabled {
+			@extend %submitButton_disabled;
+		}
+	}
+}
