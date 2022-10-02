@@ -3,7 +3,7 @@ import { useDynamicPanelText } from "../../../hooks/useDynamicPanelText";
 import { portfolioService } from "../../../services/api/portfolioService";
 import CaseCreatorComponent from "../../buisness/caseCreator/CaseCreator.component";
 import MainLayout from "../../layouts/main/mainLayout";
-import CaseComponent from "../../ui/case/Case.component";
+import CaseComponent from "../../buisness/case/Case.component";
 import s from "./portfolioPage.module.scss";
 
 const PortfolioPageComponent: FC = () => {
