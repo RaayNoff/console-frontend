@@ -1,0 +1,65 @@
+@import "../../../styles/_variables.scss";
+
+input[type="file"] {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	position: absolute;
+	z-index: -10;
+}
+input[type="file"]:focus + .creator__file {
+	outline: -webkit-focus-ring-color auto 5px;
+	outline: 1px solid #0078d7;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+.creator {
+	position: relative;
+	z-index: 10;
+	background: rgba(#121208, 0.6);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	max-width: 150px;
+	padding: 5px 10px;
+
+	// .creator__file
+	&__file {
+		padding: 5px;
+		border: 2px dashed $defaultTextColor;
+		margin-bottom: 10px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	// .creator__input
+	&__input {
+		@extend %inputTemplate;
+
+		&::placeholder {
+			@extend %placeholderTemplate;
+		}
+		&:focus {
+			@extend %focusTemplate;
+		}
+		margin-bottom: 5px;
+	}
+
+	// .creator__submit
+	&__submit {
+		@extend %submitButton;
+
+		&:hover {
+			@extend %submitButton_hover;
+		}
+		&:disabled {
+			@extend %submitButton_disabled;
+		}
+	}
+}

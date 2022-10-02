@@ -1,12 +1,17 @@
 import React, { FC } from "react";
 import { useDynamicPanelText } from "../../../hooks/useDynamicPanelText";
+import { useTypedSelector } from "../../../hooks/useTypedSelector";
 import { skillsService } from "../../../services/api/skillsService";
+import SkillCreatorComponent from "../../buisness/skillCreator/SkillCreator.component";
 import MainLayout from "../../layouts/main/mainLayout";
 import SkillComponent from "../../ui/skill/Skill.component";
 import s from "./skillspage.module.scss";
 
 const SkillsPageComponent: FC = () => {
-  const { data: skills } = skillsService.useFetchAllSkillsQuery(0);
+  const { data: skills } = skillsService.useFetchAllSkillsQuery(0, {
+    pollingInterval: 30000,
+  });
+  const { isAdmin } = useTypedSelector((state) => state.access);
 
   useDynamicPanelText();
 
@@ -24,6 +29,7 @@ const SkillsPageComponent: FC = () => {
                 stars={skill.stars}
               />
             ))}
+            {isAdmin && <SkillCreatorComponent />}
           </section>
         </div>
       </section>
