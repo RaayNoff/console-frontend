@@ -1,6 +1,6 @@
+import { Rating } from "@mui/material";
 import { FC } from "react";
 import backendEndpoints from "../../../data/classes/backendEndpoints";
-import LevelComponent from "../../buisness/level/Level.component";
 import s from "./skill.module.scss";
 
 interface ISkillProps {
@@ -18,7 +18,17 @@ const SkillComponent: FC<ISkillProps> = ({ image, name, stars }) => {
       <section className={s.skill_data}>
         <p className={s.skill_name}>{name}</p>
         <div className={s.stars}>
-          <LevelComponent stars={stars} />
+          <Rating
+            value={stars}
+            readOnly
+            precision={0.5}
+            sx={{
+              color: "#3ed08e",
+              ".MuiSvgIcon-root": {
+                fill: "#3ed08e",
+              },
+            }}
+          />
         </div>
       </section>
     </article>
