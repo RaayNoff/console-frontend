@@ -7,6 +7,27 @@
 	line-height: 1.3rem / 1.2rem * 100%;
 	border: 3px dashed $defaultTextColor;
 	border-radius: 20px;
+	@media (max-width: 662.98px) {
+		font-size: 1rem;
+		max-width: 498px;
+	}
+	@media (max-width: 522.98px) {
+		max-width: 420px;
+	}
+	@media (max-width: 444.98px) {
+		max-width: 375px;
+	}
+	@media (max-width: 426.98px) {
+		max-width: 320px;
+	}
+	@media (max-width: 346.98px) {
+		max-width: 300px;
+	}
+
+	@media (max-width: 280.98px) {
+		max-width: 230px;
+		font-size: 0.8rem;
+	}
 
 	// .welcome__title
 	&__title {

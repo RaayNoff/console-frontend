@@ -44,4 +44,16 @@ body {
 	flex-direction: column;
 	align-items: center;
 	overflow-y: auto;
+	@media (max-height: 939.98px) {
+		height: 93vh;
+	}
+	@media (max-height: 681.98px) {
+		height: 91vh;
+	}
+	@media (max-height: 527.98px) {
+		height: 90vh;
+	}
+	@media (max-height: 474.98px) {
+		height: 87vh;
+	}
 }

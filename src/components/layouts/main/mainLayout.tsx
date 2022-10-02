@@ -16,7 +16,7 @@ const MainLayout: FC<IMainLayoutProps> = ({ children }) => {
       {children}
 
       <div className={s.panel}>
-        {base + path}
+        <div className={s.panel__text}>{base + path}</div>
         <hr className={s.panel__hr} />
       </div>
 

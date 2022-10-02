@@ -12,6 +12,31 @@
 		margin-top: 90px;
 		margin-bottom: 10rem;
 		font-size: 2rem;
+		@media (max-width: 767.98px) {
+			margin-bottom: 5rem;
+		}
+		@media (max-width: 662.98px) {
+			font-size: 1.5rem;
+		}
+		@media (max-width: 440.98px) {
+			font-size: 1.3rem;
+		}
+		@media (max-width: 384.98px) {
+			margin-bottom: 2rem;
+			font-size: 1.1rem;
+		}
+		@media (max-width: 330.98px) {
+			font-size: 1rem;
+			margin-top: 30px;
+			margin-bottom: 1rem !important;
+		}
+		@media (max-width: 280.98px) {
+			font-size: 0.9rem;
+		}
+
+		@media (max-height: 600.98px) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	// .home__subtitle
