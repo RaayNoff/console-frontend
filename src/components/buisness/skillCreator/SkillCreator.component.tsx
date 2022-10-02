@@ -7,7 +7,6 @@ import s from "./skillCreator.module.scss";
 type FormValues = {
   picture: FileList;
   name: string;
-  stars: number;
 };
 
 const SkillCreatorComponent: FC = () => {
@@ -51,7 +50,6 @@ const SkillCreatorComponent: FC = () => {
         className={s.creator__input}
         type="text"
         {...register("name", { required: true })}
-        placeholder="Name..."
       />
       <Rating
         size="medium"
