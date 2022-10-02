@@ -18,7 +18,7 @@
 	z-index: 3;
 	width: calc(100% - 10px);
 	height: $windowTopBorderWidth - 15px;
-	background: linear-gradient(90deg, #{$panelGradientStart}, #{$panelGradientEnd});
+	background: $panelGradientStart;
 	padding-left: 5px;
 
 	display: flex;

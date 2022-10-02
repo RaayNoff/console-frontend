@@ -5,7 +5,7 @@ import s from "./navigation.module.scss";
 
 const NavigationComponent: FC = () => {
   const activeStyle = {
-    color: "#d1fb84",
+    color: "#2a2a2a",
   };
 
   return (

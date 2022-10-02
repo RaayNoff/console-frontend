@@ -1,30 +1,32 @@
 @import "../../../styles/_variables.scss";
 
 .navigation {
-	border: 3px dashed $defaultTextColor;
-	padding: 0.2rem 2rem;
-	border-radius: 10px;
+	padding: 0.2rem 0rem;
 	position: absolute;
-	left: 1rem;
+	right: 43.5vw;
+	top: 4px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	z-index: 5;
 
 	// .navigation__item
 	&__item {
 		font-family: inherit;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		font-weight: 600;
-		line-height: 2.2rem / 2rem * 100%;
+		line-height: 0.7rem;
 		transition: all 150ms ease-in-out;
-		margin-right: 1rem;
+		padding: 0 0.5rem;
+
+		color: $navigationTextColor;
+
 		&:last-child {
 			margin-right: 0;
 		}
 		&:hover {
 			cursor: pointer;
-			text-shadow: 0 0 5px #d1fb84, 0 0 30px #d1fb84;
 		}
 	}
 }
