@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/console-frontend/static/css/main.06b3f143.css",
+    "main.js": "/console-frontend/static/js/main.c27480bb.js",
+    "static/media/Blox2.ttf": "/console-frontend/static/media/Blox2.45efeb9f7f427835584c.ttf",
+    "static/media/Blox2.woff": "/console-frontend/static/media/Blox2.3809d3ec9fa9c522aca2.woff",
+    "static/media/Blox2.woff2": "/console-frontend/static/media/Blox2.13c8bcdf0da34fb53123.woff2",
+    "static/media/BACKTO1982.TTF": "/console-frontend/static/media/BACKTO1982.6e9eefacd8ea8f7df5e3.TTF",
+    "static/media/BACKTO1982.woff": "/console-frontend/static/media/BACKTO1982.80ee4e53067ec5a631c7.woff",
+    "static/media/noise.png": "/console-frontend/static/media/noise.b63abfeaf8493e739956.png",
+    "static/media/BACKTO1982.woff2": "/console-frontend/static/media/BACKTO1982.7e7abe4c612f9630ff15.woff2",
+    "index.html": "/console-frontend/index.html",
+    "main.06b3f143.css.map": "/console-frontend/static/css/main.06b3f143.css.map",
+    "main.c27480bb.js.map": "/console-frontend/static/js/main.c27480bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06b3f143.css",
+    "static/js/main.c27480bb.js"
+  ]
+}
