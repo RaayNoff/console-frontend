@@ -60,28 +60,3 @@
 		linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
 	background-size: 100% 3px, 2px 100%;
 }
-
-.effects:before {
-	left: 0;
-	width: 100%;
-	height: 20%;
-	pointer-events: none;
-	content: "";
-	height: 20%;
-	background: linear-gradient(rgba(81, 97, 51, 0), rgba(81, 97, 51, 0.09));
-	animation-name: update;
-	animation-timing-function: ease-in-out;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-
-	position: absolute;
-}
-
-@keyframes update {
-	0% {
-		top: -30vh;
-	}
-	100% {
-		top: 100vh;
-	}
-}
